@@ -2,7 +2,7 @@
 # Inside the function, implement the code for initializing the inventory dictionary using a loop and user input.
 def initialize_inventory(products):
     inventory = {}
-    # for product in products:
+    #for product in products:
     #    inventory[product] = int(input(f"How many {product}s do we have? "))
     inventory = {product: int(input(f"Enter the quantity of {product}s available: ")) for product in products}
     return inventory
