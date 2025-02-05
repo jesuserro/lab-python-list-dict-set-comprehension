@@ -47,11 +47,7 @@ def print_updated_inventory(inventory):
 # Use comprehension to calculate the total price. 
 # Note: assume that the user can only have 1 unit of each product.
 def calculate_total_price(customer_orders):
-    total_price = 0
-    for product in customer_orders:
-        price = float(input(f"Enter the price of {product}: "))
-        total_price += price * customer_orders[product]
-
+    total_price = sum([float(input(f"Enter the price of {product}: ")) for product in customer_orders])
     return total_price
 
 # Create function to print total price, calling function "calculate_total_price" inside
