@@ -10,7 +10,7 @@ def initialize_inventory(products):
 # 2. Define a function named `get_customer_orders` that takes no parameters. 
 # Inside the function, implement the code for prompting the user to enter the product names using a loop. 
 # The function should return the `customer_orders` set.
-def get_customer_orders_0():
+def get_customer_orders_without_comprenhension():
     customer_orders = set()
     customer_orders_num = 0
     while True:
@@ -33,14 +33,14 @@ def get_customer_orders():
 
 # 3. Define a function named `update_inventory` that takes `customer_orders` and `inventory` as parameters. 
 # Inside the function, implement the code for updating the inventory dictionary based on the customer orders.
-def update_inventory_0(customer_orders, inventory):
+def update_inventory(customer_orders, inventory):
     for product in customer_orders:
         inventory[product] -= 1
     return
 
 # 4. Modify the update_inventory function to remove the product from the inventory if its quantity becomes zero after fulfilling the customer orders. 
 # Use comprehension to filter out the products with a quantity of zero from the inventory.
-def update_inventory(customer_orders, inventory):
+def update_inventory_remove_zeroes(customer_orders, inventory):
     for product in customer_orders:
         inventory[product] -= 1
     inventory = {product: quantity for product, quantity in inventory.items() if quantity > 0}
