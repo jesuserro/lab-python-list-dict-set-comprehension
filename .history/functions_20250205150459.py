@@ -66,6 +66,11 @@ def print_updated_inventory(inventory):
     inventory_list = [f"- {product}: {quantity}" for product, quantity in inventory.items()]
     print("\n".join(inventory_list))
 
+
+
+
+    print("\n".join([f"{product}: {quantity}" for product, quantity in inventory.items()]))
+
 # 3. Add a new function to calculate the total price of the customer order. 
 # For each product in customer_orders, prompt the user to enter the price of that product. 
 # Use comprehension to calculate the total price. 

@@ -63,8 +63,8 @@ def print_order_statistics(order_statistics):
 # 6. Define a function named `print_updated_inventory` that takes `inventory` as a parameter. 
 # Inside the function, implement the code for printing the updated inventory.
 def print_updated_inventory(inventory):
-    inventory_list = [f"- {product}: {quantity}" for product, quantity in inventory.items()]
-    print("\n".join(inventory_list))
+    for product, quantity in inventory.items():
+        print(f"{product}: {quantity}")
 
 # 3. Add a new function to calculate the total price of the customer order. 
 # For each product in customer_orders, prompt the user to enter the price of that product. 
