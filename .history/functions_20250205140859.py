@@ -10,7 +10,7 @@ def initialize_inventory(products):
 # 2. Define a function named `get_customer_orders` that takes no parameters. 
 # Inside the function, implement the code for prompting the user to enter the product names using a loop. 
 # The function should return the `customer_orders` set.
-def get_customer_orders_without_comprenhension():
+def get_customer_orders0():
     customer_orders = set()
     customer_orders_num = 0
     while True:
