@@ -22,6 +22,7 @@ def get_customer_orders():
         customer_orders[product] = quantity
     return customer_orders
 
+
 # 4. Modify the update_inventory function to remove the product from the inventory if its quantity becomes zero after fulfilling the customer orders. 
 # Use comprehension to filter out the products with a quantity of zero from the inventory.
 def update_inventory(customer_orders, inventory):
