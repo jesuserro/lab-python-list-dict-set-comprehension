@@ -51,5 +51,5 @@ def calculate_total_price(customer_orders):
 # Create function to print total price, calling function "calculate_total_price" inside
 def print_total_price(customer_orders):
     total_price = calculate_total_price(customer_orders)
-    print(f"Total Price: {total_price} €")
+    print(f"Total Price: {total_price}")
 
